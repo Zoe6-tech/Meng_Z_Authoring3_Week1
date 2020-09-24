@@ -1,0 +1,29 @@
+body {
+  font: "arial", "helvetica", sans-serif;
+  font-size: 16px;
+  background-color: salmon;
+}
+
+nav {
+  margin: 0;
+}
+nav .nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: purple;
+  }
+}
+
+/*# sourceMappingURL=master.css.map */
