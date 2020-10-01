@@ -1,11 +1,16 @@
 nav{
     margin: 0;
+
     .nav-item{
         display: inline-block;
         margin: 0 10px;
-   a{
-    cursor: pointer;
-    text-decoration: none;}}
+        background-color: blue;
+        @include roundCorners(8px);
+        @include addPadding(0 5px 8px 0);
+        a{
+          cursor: pointer;
+           text-decoration: none;}
+        }
     
     :hover{
         a{
@@ -14,6 +19,3 @@ nav{
     }
 }
 
-.main-nav{
-    //whatever style i want
-}
