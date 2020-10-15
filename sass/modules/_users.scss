@@ -1,10 +1,12 @@
-.user{
-       display:inline-block;
-       padding: 12px;
-       background-color: slateblue;
-      .user-name,.user-nickname,.user-role{
-          margin: 0;
-          padding: 0;
-          background-color: skyblue;
-      }
+.user-section {
+    display: flex;
+  
+}
+
+.user { 
+    flex: 1;
+    @include addPadding(10px);
+
+    .user-name, .user-nickname, .user-role { margin: 0; }
+
 }
