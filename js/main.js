@@ -1,4 +1,4 @@
-import {fetchData} from "./modules/DataMiner.js"
+import {fetchData} from "./modules/TheDataMiner.js"
 (() => {
     
          function handleDataSet(data) {
@@ -11,7 +11,7 @@ import {fetchData} from "./modules/DataMiner.js"
                 let currentUser=userTemplate.cloneNode(true),
                 currentUserText=currentUser.querySelector('.user').children;
                     
-                currentUserText[1].src = `images/${data[user].avatar}.jpg`;
+                currentUserText[1].src = `images/${data[user].avatar}`;
                 currentUserText[2].textContent = data[user].name;
                 currentUserText[3].textContent = data[user].role;
                 currentUserText[4].textContent = data[user].nickname;
@@ -21,6 +21,6 @@ import {fetchData} from "./modules/DataMiner.js"
               console.log(data);
         }
    
-              //if you have different json
-              fetchData('./DataSet.json').then(data=>handleDataSet(data)).catch(error=>console.log(error));
+              //if you have different json,many fetchFata()...
+              fetchData('./includes/functions.php').then(data=>handleDataSet(data)).catch(error=>console.log(error));
     })();
