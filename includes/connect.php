@@ -13,7 +13,7 @@
     $db_pass = '';//mac need password, window user dont need password
 
     try{
-        $pdo = new PDO($dsn, $db_user, $db_pass);
+        $pdo = new PDO($dsn, $db_user, $db_pass);//make connection to databse
        // var_dump($pdo);//dump information about a variable. 
        // echo "you are in! enjoy the show";
        //echo is almost like console.log
